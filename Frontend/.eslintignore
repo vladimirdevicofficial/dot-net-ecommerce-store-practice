@@ -1,0 +1,11 @@
+redux
+**/node_modules/*
+**/build/*
+**/dist/*
+/public/*
+commitlint.config.js
+node_modules
+next.config.js
+/worker/*
+.idea
+next-env.d.ts

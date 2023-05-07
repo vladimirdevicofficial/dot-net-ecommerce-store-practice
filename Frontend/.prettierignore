@@ -1,0 +1,11 @@
+.yarn
+.next
+.vscode
+dist
+build
+node_modules
+public
+*.md
+*.log
+.idea
+commitlint.config.js
