@@ -1,7 +1,7 @@
-export type Name = string;
-export type Price = number;
+import { Product } from '@types';
 
 export interface IProductCard {
-    name: Name;
-    price: Price;
+  product: Product;
+  index: number;
+  gap: number;
 }
