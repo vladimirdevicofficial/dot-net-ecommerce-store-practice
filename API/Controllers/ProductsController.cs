@@ -2,6 +2,8 @@ using API.Data;
 using API.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace API.Controllers
 {
@@ -16,9 +18,14 @@ namespace API.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<Product>>> GetProducts()
+        public async Task<ActionResult<List<Product>>> GetProducts(int _page = 1, int _limit = 3)
         {
-            return await _context.Products.ToListAsync();
+            var products = await _context.Products
+                .Skip((_page - 1) * _limit)
+                .Take(_limit)
+                .ToListAsync();
+
+            return Ok(products);
         }
 
         [HttpGet("{id}")]

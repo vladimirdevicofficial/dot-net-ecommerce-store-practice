@@ -476,4 +476,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 API/appsettings.json
+
+# Frontend
 Frontend/.npmrc
+Frontend/node_modules

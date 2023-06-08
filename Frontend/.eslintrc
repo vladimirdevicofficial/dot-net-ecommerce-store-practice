@@ -142,7 +142,7 @@
 		"valid-typeof": "error",
 		// Suggestions
 		"accessor-pairs": "error",
-		"arrow-body-style": ["error", "always"],
+		"arrow-body-style": ["off", "always"],
 		"block-scoped-var": "error",
 		"camelcase": [
 			"error",

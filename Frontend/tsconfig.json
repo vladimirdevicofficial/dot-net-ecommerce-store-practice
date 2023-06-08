@@ -28,7 +28,7 @@
 			"@store/*": ["store/*"],
 			"@styles/*": ["styles/*"],
 			"@theme/*": ["theme/*"],
-			"@types/*": ["types/*"],
+			"@types": ["types/index"],
 			"@utils/*": ["utils/*"]
 		}
 	},
