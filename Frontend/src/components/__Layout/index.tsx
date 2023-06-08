@@ -14,6 +14,8 @@ import { forwardRef, ReactNode, useImperativeHandle, useRef } from 'react';
 
 import Main from '@components/__Wrappers/Main';
 
+import Header from './Header';
+
 interface ILayout {
   children: ReactNode
 }
@@ -27,6 +29,7 @@ const Layout = forwardRef(({ children }: ILayout, ref) => {
   return (
     <Main ref={localRef}>
       {children}
+      <Header />
     </Main>
   );
 });
